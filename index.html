@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#f3abb0',
+                        backgroundColor: '#303136',
+                        textOff: '#C0C2C9',
+                    },
+                    fontFamily: {
+                        code: ['Source Code Pro', 'sans-serif'],
+                        montserrat: ['Montserrat', 'serif'],
+                    },
+
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="h-screen w-screen font-montserrat text-white">
+
+    <header class=" fixed top-0 z-10  w-screen bg-backgroundColor px-10 ">
+        <div class="max-w-2xl h-12 flex items-center justify-between m-auto py-2 box-content lg:max-w-4xl">
+            <p class="text-xl font-semibold">Dulce N.</p>
+
+            <nav class="hidden lg:block ">
+                <ul class="flex gap-10 font-medium">
+                    <li class="text-textOff hover:text-white pointer"><a href="">Sobre mí</a></li>
+                    <li class="text-textOff hover:text-white pointer"><a href="">Proyectos</a></li>
+                    <li class="text-textOff hover:text-white pointer"><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button
+                class="flex gap-2 text-backgroundColor bg-primaryColor px-6 py-1 font-bold rounded-md hover:bg-[#f7bcc0]">Descargar
+                CV <box-icon type='solid' color="#303136" name='download'></box-icon></button>
+        </div>
+
+    </header>
+
+    <!-- <div class="fixed top-0 left-0 w-screen h-screen" id="particles-js"></div> -->
+
+    <main class="bg-backgroundColor pt-12 p-10">
+
+        <!-- INICIO -->
+
+        <section class="mx-auto mt-10 max-w-2xl gap-10 flex flex-col items-center lg:mt-32 lg:flex-row lg:max-w-4xl">
+
+            <img src="img/avatar color sin fondo.png" alt=""
+                class="bg-primaryColor rounded-full h-60 w-60 animate__animated animate__shakeY">
+
+            <article>
+                <h1 class="text-4xl font-semibold">Dulce Nevarez Castorena</h1>
+
+                <div class="font-semibold text-xl my-4">
+                    <p>Soy una <span class="text-primaryColor">Desarrolladora frontend</span> con interés en
+                        aprender y asumir retos que me ayuden a crecer ¡Estoy lista para crear
+                        proyectos que me impulsen a mejorar!</p>
+                </div>
+
+                <div class="my-5 h-14 flex gap-4 justify-between lg:justify-start">
+                    <button
+                        class="text-backgroundColor bg-primaryColor w-48 font-bold text-xl rounded-md hover:bg-[#f7bcc0]">GitHub</button>
+                    <button
+                        class="text-backgroundColor bg-primaryColor w-48 font-bold text-xl rounded-md hover:bg-[#f7bcc0]">Linkedin</button>
+
+                </div>
+            </article>
+        </section>
+
+        <!-- Experiencia -->
+
+        <section class=" text-white mx-auto mt-10 max-w-2xl lg:max-w-4xl lg:mt-16">
+
+            <p class="text-2xl font-semibold mb-6">Habilidades</p>
+
+            <section class="flex flex-col gap-2 text-lg">
+
+                <article>
+                    <p><span class="font-semibold text-primaryColor">• Transformación de diseños en sitios Web:
+                        </span>Tengo experiencia transformando diseños creados en Figma a sitios webs
+                        funcionales
+                        y me aseguro de seguir cada detalle del diseño.</p>
+                </article>
+                <article>
+                    <p><span class="font-semibold text-primaryColor">• Manejo de APIs: </span>He integrando
+                        APIs para obtener datos externos y gestionar datos de manera eficiente.</p>
+                </article>
+
+                <article>
+                    <p><span class="font-semibold text-primaryColor">• Desarrollo web responsive: </span>mis proyectos
+                        están optimizados para diferentes tamaños de pantalla,
+                        asegurando una excelente experiencia tanto en
+                        dispositivos móviles como en escritorios.</p>
+                </article>
+            </section>
+
+        </section>
+
+
+        <!-- Tecnologias -->
+
+        <section class="mx-auto mt-10 max-w-2xl lg:max-w-4xl lg:mt-16">
+
+            <p class="text-2xl font-semibold mb-6">Tecnologías</p>
+
+            <section class="grid grid-cols-3 gap-6 justify-between lg:grid-cols-5">
+
+                <article class="border-2 border-[#51535c] p-5 rounded-xl flex flex-col items-center gap-3 flex-wrap ">
+
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 256 256">
+                        <g fill="none">
+                            <rect width="256" height="256" fill="#0277bd" rx="60" />
+                            <path fill="#ebebeb"
+                                d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z" />
+                            <path fill="#fff"
+                                d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z" />
+                        </g>
+                    </svg>
+
+                    <p>CSS</p>
+                </article>
+
+                <article class="border-2 border-[#51535c] p-5 rounded-xl flex flex-col items-center gap-3 flex-wrap ">
+
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 128 128">
+                        <path fill="#e44d26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198l-45.019 12.48z" />
+                        <path fill="#f16529" d="m64 116.8l36.378-10.086l8.559-95.878H64z" />
+                        <path fill="#ebebeb"
+                            d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692l3.382 37.927H64zm0 35.743l-.061.017l-15.327-4.14l-.979-10.975H33.816l1.928 21.609l28.193 7.826l.063-.017z" />
+                        <path fill="#fff"
+                            d="M63.952 52.455v13.763h16.947l-1.597 17.849l-15.35 4.143v14.319l28.215-7.82l.207-2.325l3.234-36.233l.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092l.628-6.978l.329-3.692z" />
+                    </svg>
+
+                    <p>HTML</p>
+                </article>
+
+                <article class="border-2 border-[#51535c] p-5 rounded-xl flex flex-col items-center gap-3 flex-wrap ">
+
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 256 256">
+                        <g fill="none">
+                            <rect width="256" height="256" fill="#f0db4f" rx="60" />
+                            <path fill="#323330"
+                                d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574" />
+                        </g>
+                    </svg>
+
+                    <p>Javascript</p>
+                </article>
+
+                <article class="border-2 border-[#51535c] p-5 rounded-xl flex flex-col items-center gap-3 flex-wrap ">
+
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 256 256">
+                        <g fill="none">
+                            <rect width="256" height="256" fill="#f4f2ed" rx="60" />
+                            <path fill="url(#skillIconsTailwindcssLight0)" fill-rule="evenodd"
+                                d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5"
+                                clip-rule="evenodd" />
+                            <defs>
+                                <linearGradient id="skillIconsTailwindcssLight0" x1="86.5" x2="163.5" y1="74" y2="185.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#32b1c1" />
+                                    <stop offset="1" stop-color="#14c6b7" />
+                                </linearGradient>
+                            </defs>
+                        </g>
+                    </svg>
+
+                    <p>Tailwind</p>
+                </article>
+
+                <article class="border-2 border-[#51535c] p-5 rounded-xl flex flex-col items-center gap-3 flex-wrap ">
+
+                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 128 128">
+                        <defs>
+                            <linearGradient id="deviconBootstrap0" x1="76.079" x2="523.48" y1="10.798" y2="365.95"
+                                gradientTransform="translate(1.11 14.613)scale(.24566)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#9013fe" />
+                                <stop offset="1" stop-color="#6610f2" />
+                            </linearGradient>
+                            <linearGradient id="deviconBootstrap1" x1="193.51" x2="293.51" y1="109.74" y2="278.87"
+                                gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="#fff" />
+                                <stop offset="1" stop-color="#f1e5fc" />
+                            </linearGradient>
+                            <filter id="deviconBootstrap2" width="197" height="249" x="161.9" y="135.46"
+                                color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="8" />
+                                <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+                                <feBlend in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                        <path fill="url(#deviconBootstrap0)"
+                            d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099c-.228 6.546.068 15.026 2.202 21.94c2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883c-2.134 6.914-2.43 15.394-2.202 21.94c.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098c.228-6.546-.068-15.026-2.203-21.94c-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883c2.135-6.914 2.43-15.394 2.203-21.94" />
+                        <path fill="url(#deviconBootstrap1)"
+                            d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355c0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219c0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279c0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49c0 23.459-16.484 35.941-47.605 35.941z"
+                            filter="url(#deviconBootstrap2)" transform="translate(1.494 2.203)scale(.24566)" />
+                    </svg>
+
+                    <p>Bootstrap</p>
+                </article>
+
+
+
+            </section>
+
+            <!-- Proyectos -->
+
+            <section class="mx-auto mt-10 max-w-2xl lg:max-w-4xl lg:mt-16 ">
+                <p class="text-2xl font-semibold mb-6">Proyectos</p>
+
+                <article
+                    class="bg-red-500 grid grid-cols-1 transition-all hover:-translate-y-2 lg:grid-cols-2 rounded-lg overflow-hidden">
+                    <div class="overflow-hidden">
+
+                        <img class="h-full w-full object-cover object-center  transition-all hover:scale-110 aspect-video"
+                            src="/img/proyects/encriptador.png" alt="">
+                    </div>
+
+
+                    <div class="px-10 py-5">
+                        <p>titulo del proyecto</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magnam.</p>
+                        <div>
+                            <button>code</button>
+                            <button>demo</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+    </main>
+    <script src="
+    https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+    "></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/json/particle.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+
+    </script>
+</body>
+
+</html>
