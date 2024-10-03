@@ -33,7 +33,16 @@ background: rgb(238, 174, 202);
     --animate-duration: 30s;
     animation-iteration-count: infinite;
 }
-
-body{
+*{
+    outline: 5px solid red;
+}
+body,main{
+    max-width: 100vw;
+    box-sizing: content-box;
+    min-height: 100vh;
     
+}
+section{
+    max-width: 100vw;
+    box-sizing: content-box;
 }
