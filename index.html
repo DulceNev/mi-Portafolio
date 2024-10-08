@@ -42,11 +42,7 @@
         @tailwind utilities;
 
 .nube {
-    @apply fixed lg:absolute w-full min-h-[100vh] max-w-[100vw] overflow-hidden;
-}
-
-.tecnologia {
-    @apply shadow-md h-16 w-16 rounded-xl w-10 flex flex-col items-center justify-center gap-2 bg-slate-50/30
+    @apply fixed lg:absolute w-full min-h-[100vh] max-w-[100vw] overflow-hidden ;
 }
 
       </style>
@@ -54,28 +50,27 @@
 
 <body class="h-full max-w-full relative  font-montserrat text-white bg-gradient-to-t from-[#5f55de] to-[#001356]">
 
-
     <div class=" -top-[20%] nube ">
         <img class="relative max-w-xl lg:max-w-4xl -left-56  lg:top-[0%] animate-[floating_infinite_100s_alternate]"
-            src="img/fondo/nubes/nube 1.png" alt="">
+            src="img/fondo/nubes/nube 1.png" alt="nube de fondo">
     </div>
 
     <div class=" top-0 nube">
         <img class="relative max-w-xl lg:max-w-4xl top-40 left-80 lg:top-[30%] lg:left-[50%] animate-[floating_infinite_100s_alternate]"
-            src="img/fondo/nubes/nube 2.png" alt="">
+            src="img/fondo/nubes/nube 2.png" alt="nube de fondo">
     </div>
 
     <div class="top-0 mt-[30%] nube">
         <img class="relative max-w-xl lg:max-w-4xl top-80 -left-72 lg:top-[30%] lg:-left-[0%] animate-[floating_infinite_100s_alternate]"
-            src="img/fondo/nubes/nube 3.png" alt="">
+            src="img/fondo/nubes/nube 3.png" alt="nube de fondo">
     </div>
 
     <div class="w-full top-0 nube">
         <img class=" relative -top-[40%] -left-[50%] animate-[floating_infinite_200s_alternate]"
-            src="img/fondo/ambiente/aambiente-1.png" alt="">
+            src="img/fondo/ambiente/aambiente-1.png" alt="imagen ambiente de fondo">
     </div>
 
-    <div><img class=" absolute w-full object-cover -bottom-0" src="img/fondo/fondo.png"></div>
+    <div><img class=" absolute w-full object-cover -bottom-0" src="img/fondo/fondo.png" alt="fondo de nube"></div>
 
     <header class="fixed flex left-0 right-0 w-full justify-between  top-0 z-10 lg:mx-auto lg:max-w-4xl">
 
@@ -95,7 +90,7 @@
 
     </header>
 
-    <div class="fixed top-0 left-0 w-screen h-screen" id="particles-js"></div>
+    <div class="fixed top-0 left-0 w-screen h-full" id="particles-js"></div>
 
     <main class="m-5 flex flex-col justify-center lg:max-w-4xl mt-[110px] lg:mx-auto">
 
@@ -411,12 +406,17 @@
 
     </main>
 
-    <footer class="bottom-0 w-full h-20 bg-primary ">
+    <footer class="bottom-0 w-full h-16 relative flex flex-col items-center justify-center gap-3">
 
-        <section class="flex justify-center">
-            <p class="text-xs">© 2024 Desarrollado por Dulce Nevarez</p>
+        <p class="text-xs">© 2024 Desarrollado por Dulce Nevarez</p>
 
-        </section>
+        <p class="text-sm">Las imágenes presentadas en este proyecto han sido diseñadas y creadas por mí, con el
+            propósito de
+            brindar una
+            experiencia visual única y personalizada.</p>
+
+
+
 
     </footer>
 
