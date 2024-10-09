@@ -42,7 +42,7 @@
         @tailwind utilities;
 
 .nube {
-    @apply fixed lg:absolute w-full min-h-[100vh] max-w-[100vw] overflow-hidden ;
+    @apply fixed lg:absolute w-full min-h-[100vh] max-w-[100vw] overflow-hidden opacity-[.85];
 }
 
       </style>
@@ -55,7 +55,7 @@
             src="img/fondo/nubes/nube 1.png" alt="nube de fondo">
     </div>
 
-    <div class=" top-0 nube">
+    <div class=" top-0 nube ">
         <img class="relative max-w-xl lg:max-w-4xl top-40 left-80 lg:top-[30%] lg:left-[50%] animate-[floating_infinite_100s_alternate]"
             src="img/fondo/nubes/nube 2.png" alt="nube de fondo">
     </div>
@@ -72,13 +72,19 @@
 
     <div><img class=" absolute w-full object-cover -bottom-0" src="img/fondo/fondo.png" alt="fondo de nube"></div>
 
-    <header class="fixed flex left-0 right-0 w-full justify-between  top-0 z-10 lg:mx-auto lg:max-w-4xl">
+
+    <div class="fixed -z-10 top-0 left-0 w-screen h-full" id="particles-js"></div>
+
+    <!-- HEADER -->
+
+    <header
+        class="fixed flex left-0 right-0 w-full justify-between top-0 z-10 max-w-2xl m-auto lg:mx-auto lg:max-w-4xl lg:px-5">
 
         <div
-            class=" z-10 mx-5 lg:mx-auto mt-7 flex-1  px-5 bg-slate-50/30 rounded-2xl backdrop-blur-md lg:max-w-4xl lg:px-10  h-12 flex items-center justify-between m-auto py-2 box-content">
+            class=" z-10 mx-5 lg:mx-auto mt-7 flex-1  px-5 rounded-2xl backdrop-blur-md lg:px-10  h-12 flex items-center justify-between m-auto py-2 box-content">
 
 
-            <p class="font-extrabold text-xl">Dulce<span class="text-primary">Nev</span></p>
+            <p class="font-extrabold text-xl">DulceNev</p>
 
             <a href="/assets/CV DULCE NEVAREZ.pdf" download=""
                 class="bg-slate-50/30 flex gap-2 px-6 py-1 font-bold rounded-md transition hover:ease-in-out hover:bg-slate-200/60 hover:text-primary fill-white hover:fill-primary shadow-md">
@@ -90,24 +96,24 @@
 
     </header>
 
-    <div class="fixed -z-10 top-0 left-0 w-screen h-full" id="particles-js"></div>
+    <!-- MAIN -->
 
-    <main class="m-5 flex flex-col justify-center lg:max-w-4xl mt-[110px] lg:mx-auto">
+    <main class=" flex flex-col justify-center mt-[110px]  max-w-2xl lg:max-w-4xl mx-auto">
 
         <!-- INICIO -->
 
-        <section class="flex flex-col gap-10 items-center lg:flex-row lg:px-10 my-5">
+        <section class="flex flex-col gap-10 items-center lg:flex-row lg:px-10 m-5 ">
 
 
 
             <img src="img/avatar color sin fondo.png" alt="avatar de dulce nevarez"
-                class="backdrop-blur-sm border-2 rounded-full h-40 w-40 animate__animated animate__shakeY lg:h-60 lg:w-60">
+                class="bg-slate-50/30 rounded-full h-40 w-40 animate__animated animate__shakeY lg:h-60 lg:w-60">
 
             <article>
                 <h1 class="text-3xl font-bold">Dulce Nevarez Castorena</h1>
 
                 <div class="font-semibold text-md my-4">
-                    <p>Soy una <span class="text-primary font-extrabold">Desarrolladora frontend</span> apasionada por
+                    <p>Soy una Desarrolladora frontend apasionada por
                         el aprendizaje y siempre dispuesta a asumir nuevos desafíos que
                         impulsen mi crecimiento. Estoy preparada para crear proyectos innovadores que me ayuden a
                         mejorar mis habilidades y
@@ -137,7 +143,7 @@
 
         <!-- Habilidades -->
 
-        <section class="lg:px-10 my-5">
+        <section class="lg:px-10 m-5">
 
             <p class="text-3xl font-bold mb-3 flex items-center gap-2 ">Habilidades<box-icon name='bulb'
                     color="white"></box-icon>
@@ -146,40 +152,29 @@
             <section class="flex flex-col gap-2 text-md">
 
                 <article>
-                    <p>• Tengo experiencia transformando diseños creados en Figma a sitios webs
-                        funcionales
-                        y me aseguro de seguir cada detalle del diseño.</p>
+                    <p>• Transformo diseños en Figma a sitios web funcionales, siguiendo cada detalle.</p>
                 </article>
                 <article>
-                    <p>• He integrando
-                        APIs para obtener datos externos y gestionar datos de manera eficiente.</p>
+                    <p>• Integro APIs para gestionar datos de forma eficiente.</p>
                 </article>
 
                 <article>
-                    <p>• mis proyectos
-                        están optimizados para diferentes tamaños de pantalla,
-                        asegurando una excelente experiencia tanto en
-                        dispositivos móviles como en escritorios.</p>
+                    <p>• Optimizo proyectos para distintos tamaños de pantalla, mejorando la experiencia en móviles y
+                        escritorio.</p>
                 </article>
 
                 <article>
-                    <p>• Poseo experiencia en el uso de Git para control de versiones, lo que me permite gestionar y
-                        hacer seguimiento eficiente
-                        de los cambios en mis proyectos. </p>
+                    <p>• Uso Git para control de versiones y seguimiento de cambios en proyectos. </p>
                 </article>
 
                 <article>
-                    <p>• Tengo conocimientos en SEO básico, aplicando buenas prácticas de optimización en el código HTML
-                        y contenido web, para
-                        mejorar la visibilidad en motores de búsqueda, me aseguro que mis proyectos sean fácilmente
-                        encontrables y accesibles
-                        para los usuarios.</p>
+                    <p>• Aplico buenas prácticas de SEO para mejorar la visibilidad y accesibilidad de los proyectos.
+                    </p>
                 </article>
 
                 <article>
-                    <p>• Tengo experiencia trabajando con frameworks de CSS como Bootstrap y Tailwind CSS, lo que me
-                        permite desarrollar
-                        interfaces de manera eficiente y mantener un diseño consistente</p>
+                    <p>• Trabajo con frameworks de CSS como Bootstrap y Tailwind para desarrollar interfaces
+                        consistentes y eficientes.</p>
                 </article>
             </section>
 
@@ -188,7 +183,7 @@
 
         <!-- Tecnologias -->
 
-        <section class="lg:px-10 my-5">
+        <section class="lg:px-10 m-5">
 
             <p class="text-3xl font-bold mb-5 flex items-center gap-2">Tecnologías<box-icon name='cog'
                     color="white"></box-icon>
@@ -308,14 +303,14 @@
 
         <!-- Proyectos -->
 
-        <section class="lg:px-10 flex flex-col gap-4 my-5">
+        <section class="lg:px-10 flex flex-col gap-4 m-5">
 
             <p class="text-3xl font-bold mb-3 flex items-center gap-2">Proyectos<box-icon name='folder'
                     color="white"></box-icon>
             </p>
 
             <article
-                class="grid grid-cols-1 transition-all hover:-translate-y-2  rounded-lg overflow-hidden p-5 rounded-xl lg:grid-cols-2">
+                class="grid grid-cols-1 transition-all hover:-translate-y-2  rounded-lg overflow-hidden rounded-xl lg:grid-cols-2">
 
                 <div class="overflow-hidden">
                     <img class=" h-full w-full " src="/img/proyects/encriptador.png" alt="encriptador de texto">
@@ -359,11 +354,11 @@
 
         <!-- Formación Académica -->
 
-        <section class="lg:px-10 my-5">
-            <p class="text-3xl font-bold mb-5 flex items-center gap-2">Formación Académica<box-icon name='pencil'
+        <section class="lg:px-10 m-5">
+            <p class="text-3xl font-bold mb-5 flex items-center gap-2">Educación<box-icon name='pencil'
                     color="white"></box-icon></p>
 
-            <section class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 <article
                     class="flex flex-col justify-center  h-80 items-center w-full gap-4 m-auto w-full p-3 text-center bg-slate-50/30 rounded-xl shadow-sm">
 
@@ -406,15 +401,16 @@
 
     </main>
 
-    <footer class="bottom-0 w-full h-16 relative flex flex-col items-center justify-center gap-3">
+    <footer class="bottom-0 text-center w-full h-24 relative">
 
-        <p class="text-xs">© 2024 Desarrollado por Dulce Nevarez</p>
+        <section class="my-5 flex flex-col w-full items-center justify-center gap-4 max-w-2xl m-auto">
+            <p class="text-xs">© 2024 Desarrollado por Dulce Nevarez</p>
 
-        <p class="text-sm">Las imágenes presentadas en este proyecto han sido diseñadas y creadas por mí, con el
-            propósito de
-            brindar una
-            experiencia visual única y personalizada.</p>
-
+            <p class="text-sm">Las imágenes presentadas en este proyecto han sido diseñadas y creadas por mí, con el
+                propósito de
+                brindar una
+                experiencia visual única y personalizada.</p>
+        </section>
 
 
 
