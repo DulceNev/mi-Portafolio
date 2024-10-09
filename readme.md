@@ -4,7 +4,7 @@ Este proyecto es mi portafolio personal, creado para mostrar mis habilidades com
 
 El objetivo de este portafolio es no solo presentar mis habilidades técnicas, sino también reflejar mi creatividad y atención al detalle en el desarrollo de interfaces web.
 
-<p style="text-align:center"><img src="/img/proyects/Screenshot_6.png" alt="Miniatura de portafolio" /></p>
+<p style="text-align:center"><img src="/img/proyects/miniatura.webp" alt="Miniatura de portafolio" /></p>
 
 ### Demo 🌐
 
