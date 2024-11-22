@@ -10,7 +10,7 @@ El objetivo de este portafolio es no solo presentar mis habilidades técnicas, s
 
 _Puedes ver la demostracion del proyecto en el siguiente enlace_
 
--   [Demo](https://portafolio-challenge-omega.vercel.app/)
+-   [Demo](https://mi-portafolio-three-pi.vercel.app/)
 
 ## Construido con 🛠️
 
